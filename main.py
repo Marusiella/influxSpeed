@@ -54,7 +54,7 @@ def pinger():
 def writeData():
     with InfluxDBClient(url=str(INFLUXDB_ADDRESS_WITH_PORT), token=INFLUXDB_TOKEN, org=INFLUXDB_ORG) as client:
         write_api = client.write_api(write_options=SYNCHRONOUS)
-        data = {'measurement':"speedtest",'fields':dictionary}
+        data = {'measurement':"speedtest",'fields':dictionary,"host":"speedtest"}
         write_api.write(INFLUXDB_BUCKET, INFLUXDB_ORG, data)
 
 if __name__ == "__main__":
