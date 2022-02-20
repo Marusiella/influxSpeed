@@ -2,7 +2,7 @@ from dotenv import load_dotenv
 import os
 from os.path import join, dirname
 from datetime import datetime
-from influxdb_client import InfluxDBClient, Point, WritePrecision
+from influxdb_client import InfluxDBClient
 from influxdb_client.client.write_api import SYNCHRONOUS
 import speedtest
 import json
