@@ -1,4 +1,4 @@
-# influxSpeed
+## influxSpeed
 ### Python mini program for logging speedtest and ping to influxdb database
 
 #### Run without docker
